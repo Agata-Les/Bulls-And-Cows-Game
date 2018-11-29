@@ -111,5 +111,5 @@ bool AskToPlayAgain()
 void PrintGameSummary()
 {
 	if (BCGame.IsGameOver()) std::cout << "Congratulations. You won!\n";
-	else std::cout << "Better luck next time!\n";
+	else std::cout << "You run out of turns. The hidden word is: " << BCGame.RevealHiddenWord() << "/n/n";
 }

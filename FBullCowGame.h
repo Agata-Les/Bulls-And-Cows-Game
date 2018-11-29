@@ -32,6 +32,7 @@ public:
 	int32 GetCurrentTry() const;
 	EWordStatus CheckGuessValidity(FString) const;
 	FBullCowCount SubmitValidGuess(FString);
+	FString RevealHiddenWord() const;
 
 private:
 	int32 MyCurrentTry;

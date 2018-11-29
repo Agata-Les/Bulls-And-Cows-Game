@@ -24,6 +24,7 @@ int32 FBullCowGame::GetMaxTries() const { return MyMaxTries; }
 int32 FBullCowGame::GetHiddenWordLength() const { return MyHiddenWord.length(); }
 bool FBullCowGame::IsGameOver() const { return bIsGameWon; }
 int32 FBullCowGame::GetCurrentTry() const { return MyCurrentTry; }
+FString FBullCowGame::RevealHiddenWord() const { return MyHiddenWord; }
 
 int32 FBullCowGame::FindNumberOfMaxTries() const
 {
@@ -58,7 +59,7 @@ FBullCowCount FBullCowGame::SubmitValidGuess(FString Guess)
 {
 	MyCurrentTry++;
 	FBullCowCount BullCowCount;
-	const int32 WordLength = MyHiddenWord.length();
+	const int32 WordLength = GetHiddenWordLength();
 
 	for(int32 i = 0; i < WordLength; ++i)
 	{
