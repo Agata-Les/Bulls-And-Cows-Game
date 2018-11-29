@@ -41,11 +41,11 @@ void PrintIntro()
 	std::cout << "   *   |-,----|                    |--------| * " << std::endl;
 	std::cout << "       ^      ^                    ^        ^ " << std::endl;
 	std::cout << std::endl;
-	std::cout << " The goal of the game is to guess the isogram called The Hidden Word.\n"
-	" If you guess the letter that is in The Hidden Word and you got it in the right place,\n"
-	" you will get a bull.\n"
-	" If you guess the letter, but it is on another position in The Hidden Word,\n"
-	" then you will get a cow.\n" << std::endl;
+	std::cout << "The goal of the game is to guess an isogram - a word where no letter is repeated.\n"
+		"To take the guess type a word in the console and hit enter - you will get info of how many Bulls and Cows you got.\n"
+		"You get a Bull when you guess a correct letter in a correct place - but there is no info which letter it is.\n"
+		"If the letter is correctly guessed but is in a wrong position you get a Cow.\n"
+		"You have limited number of turns so use them wisely.\n "<< std::endl;
 	std::cout<< "Can you guess the " << BCGame.GetHiddenWordLength() << " letter isogram?\n\n";
 	return;
 }
