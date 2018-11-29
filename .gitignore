@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+BullCowGame.vcxproj.filters
+BullCowGame.vcxproj.user
+Debug/
+
